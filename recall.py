@@ -30,7 +30,7 @@ print('path success')
 
 # 读取点击数据，这里分成线上和线下，如果是为了获取线上提交结果应该讲测试集中的点击数据合并到总的数据中
 # 如果是为了线下验证模型的有效性或者特征的有效性，可以只使用训练集
-def get_all_click_df(data_path='./data_raw/', offline=True):
+def get_all_click_df(data_path='./tcdata/', offline=False):
     if offline:
         all_click = pd.read_csv(data_path + 'train_click_log.csv')
     else:
