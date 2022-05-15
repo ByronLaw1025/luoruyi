@@ -784,7 +784,7 @@ def combine_recall_results(user_multi_recall_dict, weight_dict=None, topk=25):
             
         return norm_sorted_item_list
     
-    print('多路召回合并...')
+    print('multi_recall ing...')
     for method, user_recall_items in tqdm(user_multi_recall_dict.items()):
         print(method + '...')
         # 在计算最终召回结果的时候，也可以为每一种召回结果设置一个权重
